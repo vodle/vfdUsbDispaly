@@ -1,0 +1,17 @@
+F:\SRC\CSharp\mkbe\vfdDisplay\vfdDisplay\bin\Release\vfdDisplay.exe.config
+F:\SRC\CSharp\mkbe\vfdDisplay\vfdDisplay\bin\Release\vfdDisplay.exe
+F:\SRC\CSharp\mkbe\vfdDisplay\vfdDisplay\bin\Release\vfdDisplay.pdb
+F:\SRC\CSharp\mkbe\vfdDisplay\vfdDisplay\obj\Release\vfdDisplay.csproj.AssemblyReference.cache
+F:\SRC\CSharp\mkbe\vfdDisplay\vfdDisplay\obj\Release\vfdDisplay.csproj.SuggestedBindingRedirects.cache
+F:\SRC\CSharp\mkbe\vfdDisplay\vfdDisplay\obj\Release\vfdDisplay.Form1.resources
+F:\SRC\CSharp\mkbe\vfdDisplay\vfdDisplay\obj\Release\vfdDisplay.Properties.Resources.resources
+F:\SRC\CSharp\mkbe\vfdDisplay\vfdDisplay\obj\Release\vfdDisplay.csproj.GenerateResource.cache
+F:\SRC\CSharp\mkbe\vfdDisplay\vfdDisplay\obj\Release\vfdDisplay.csproj.CoreCompileInputs.cache
+F:\SRC\CSharp\mkbe\vfdDisplay\vfdDisplay\obj\Release\vfdDisplay.exe
+F:\SRC\CSharp\mkbe\vfdDisplay\vfdDisplay\obj\Release\vfdDisplay.pdb
+F:\SRC\CSharp\mkbe\vfdDisplay\vfdDisplay\bin\Release\HidSharp.dll
+F:\SRC\CSharp\mkbe\vfdDisplay\vfdDisplay\bin\Release\System.CodeDom.dll
+F:\SRC\CSharp\mkbe\vfdDisplay\vfdDisplay\bin\Release\HidSharp.pdb
+F:\SRC\CSharp\mkbe\vfdDisplay\vfdDisplay\bin\Release\HidSharp.xml
+F:\SRC\CSharp\mkbe\vfdDisplay\vfdDisplay\bin\Release\System.CodeDom.xml
+F:\SRC\CSharp\mkbe\vfdDisplay\vfdDisplay\obj\Release\vfdDisplay.csproj.CopyComplete
