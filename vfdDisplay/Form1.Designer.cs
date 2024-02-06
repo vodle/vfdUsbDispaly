@@ -36,8 +36,8 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.nIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.btnWrite = new System.Windows.Forms.Button();
-            this.timer20sec = new System.Windows.Forms.Timer(this.components);
             this.timer60sec = new System.Windows.Forms.Timer(this.components);
+            this.btnNextScreen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnConnect
@@ -91,21 +91,28 @@
             this.btnWrite.UseVisualStyleBackColor = true;
             this.btnWrite.Click += new System.EventHandler(this.btnWrite_Click);
             // 
-            // timer20sec
-            // 
-            this.timer20sec.Tick += new System.EventHandler(this.timer20sec_Tick);
-            // 
             // timer60sec
             // 
             this.timer60sec.Enabled = true;
             this.timer60sec.Interval = 60000;
             this.timer60sec.Tick += new System.EventHandler(this.timer60sec_Tick);
             // 
+            // btnNextScreen
+            // 
+            this.btnNextScreen.Location = new System.Drawing.Point(222, 12);
+            this.btnNextScreen.Name = "btnNextScreen";
+            this.btnNextScreen.Size = new System.Drawing.Size(75, 23);
+            this.btnNextScreen.TabIndex = 4;
+            this.btnNextScreen.Text = "Next S";
+            this.btnNextScreen.UseVisualStyleBackColor = true;
+            this.btnNextScreen.Click += new System.EventHandler(this.btnNextScreen_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 453);
+            this.Controls.Add(this.btnNextScreen);
             this.Controls.Add(this.btnWrite);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.cbPorts);
@@ -126,8 +133,8 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.NotifyIcon nIcon;
         private System.Windows.Forms.Button btnWrite;
-        private System.Windows.Forms.Timer timer20sec;
         private System.Windows.Forms.Timer timer60sec;
+        private System.Windows.Forms.Button btnNextScreen;
     }
 }
 

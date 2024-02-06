@@ -41,9 +41,7 @@ namespace vfdDisplay
             display.DisableBlinking();
             DrowClockAndUptime();
 
-            timer20sec.Interval =20000;
-            timer20sec.Enabled = true;
-            timer20sec.Start();
+ 
             timer60sec.Interval = 60000;
             timer60sec.Enabled = true;
             timer60sec.Start();
@@ -120,11 +118,9 @@ namespace vfdDisplay
 
         private void timer60sec_Tick(object sender, EventArgs e)
         {
-            if (pageCounter < 2)
-            {
-                pageCounter++;
-            }
-           
+            NextScreenTick();
+
+
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -133,23 +129,6 @@ namespace vfdDisplay
             display.ClearScreen();
             comport.Close();
             Application.Exit();
-        }
-
-        private void timer20sec_Tick(object sender, EventArgs e)
-        {
-            switch (pageCounter)
-            {
-                case 0:
-                    DrowClockAndUptime();
-                    break;
-                case 1:
-                    UpdateCpuAndRam();
-                    break;
-            }
-            if (pageCounter >= 2) {
-                pageCounter = 0;
-
-            }
         }
 
         private void DrowClockAndUptime() {
@@ -168,6 +147,32 @@ namespace vfdDisplay
             display.Write(formated);
 
         }
+
+        private void btnNextScreen_Click(object sender, EventArgs e)
+        {
+            NextScreenTick();
+        }
+
+        private void NextScreenTick() {
+            switch (pageCounter)
+            {
+                case 0:
+                    DrowClockAndUptime();
+                    break;
+                case 1:
+                    UpdateCpuAndRam();
+                    break;
+
+            }
+            if (pageCounter < 3)
+            {
+                pageCounter++;
+            }
+            else {
+                pageCounter=0;
+            }
+        }
+
         public DateTime UnixTimeStampToDateTime(double unixTimeStamp)
         {
             DateTime dateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
@@ -175,6 +180,7 @@ namespace vfdDisplay
             return dateTime;
         }
 
+    
     }
 
 }
